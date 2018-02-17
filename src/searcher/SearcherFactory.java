@@ -5,7 +5,6 @@ public class SearcherFactory {
         switch (strategy) {
             case "depth" : return new DFSSearcher(pattern, root);
             case "breadth" : return new BFSSearcher(pattern, root);
-            case "best" : return new BestSearcher(pattern, root);
             default : return new BFSSearcher(pattern, root);
         }
     }
